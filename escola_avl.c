@@ -501,5 +501,8 @@ int main(void)
     free(escolas);
     free(indices);
 
+#ifdef _WIN32
+    system("pause");
+#endif
     return 0;
 }
